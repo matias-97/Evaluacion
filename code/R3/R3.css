@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* Video */
+
+.triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid rgba(0, 0, 0, .5);
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.triangulo :hover {
+    cursor: pointer;
+}
+
+.bloque-triangulo span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    max-height: 90rem;
+}
+
+.video .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.video video {
+    display: block;
+    width: 100%;
+}
+
+.video .overlay .center-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media only screen and (min-width:768px) {
+    .video .overlay .center-btn {
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .video .overlay .center-btn {
+        height: 35%;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .video .overlay .center-btn {
+        height: 60%;
+    }
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2rem;
+    border-radius: 50% 50%;
+}
+
+.center-btn {
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/* Columnas */
+
+@media only screen and (min-width:768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+
+/* Texto */
+
+.texto {
+    margin-top: 4rem;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.texto h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.texto p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.texto span {
+    display: block;
+}

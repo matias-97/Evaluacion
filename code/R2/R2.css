@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: linen;
+}
+
+tbody {
+    color: lightslategray;
+    font-size: 1rem;
+}
+
+td,
+th {
+    border: 1px solid lightgrey;
+    padding: 8px 2rem;
+}
+
+@media only screen and (max-width:480px) {
+    table {
+        overflow-x: auto;
+    }
+}
